@@ -1,0 +1,18 @@
+{
+  "name": "lux-id-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for lux.id - routes auth to IAM, serves marketing site",
+  "type": "module",
+  "main": "src/worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {
+    "@luxfi/logo": "file:../../lux/logo"
+  },
+  "devDependencies": {
+    "wrangler": "^4.61.1"
+  }
+}

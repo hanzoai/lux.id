@@ -1,0 +1,17 @@
+name = "lux-id"
+main = "src/worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+IAM_ORIGIN = "https://iam.hanzo.ai"
+MARKETING_ORIGIN = "https://hanzoai.github.io"
+MARKETING_PATH = "/lux.id"
+
+# Custom domain
+[[routes]]
+pattern = "lux.id/*"
+zone_name = "lux.id"
+
+[[routes]]
+pattern = "iam.lux.network/*"
+zone_name = "lux.network"
